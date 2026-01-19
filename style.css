@@ -8,6 +8,17 @@ h1 {
   color: #333;
 }
 
+.reference ul {
+  list-style: none;
+  padding: 0;
+}
+
+.reference li {
+  display: inline-block;
+  margin: 5px 10px;
+  font-size: 1.2em;
+}
+
 .setup, .game {
   margin: 20px auto;
 }
@@ -30,4 +41,16 @@ button {
 #secret-display button, #range-info button {
   margin-left: 5px;
   font-size: 0.9em;
+}
+
+#message {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+#input-display {
+  font-weight: bold;
+  margin-left: 10px;
 }
