@@ -1,0 +1,33 @@
+body {
+  font-family: "Microsoft YaHei", Arial, sans-serif;
+  text-align: center;
+  background-color: #f2f5f9;
+}
+
+h1 {
+  color: #333;
+}
+
+.setup, .game {
+  margin: 20px auto;
+}
+
+input {
+  padding: 6px;
+  margin: 5px;
+  width: 80px;
+}
+
+button {
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+#secret-display button, #range-info button {
+  margin-left: 5px;
+  font-size: 0.9em;
+}

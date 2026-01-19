@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>猜数字游戏（中文学习版）</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🎯 猜数字游戏（中文学习版）</h1>
+
+  <div class="setup">
+    <label>最小值：
+      <input type="number" id="min" value="1">
+    </label>
+    <label>最大值：
+      <input type="number" id="max" value="20">
+    </label>
+    <button onclick="startGame()">开始游戏</button>
+  </div>
+
+  <div class="game hidden" id="game">
+    <p id="range-info"></p>
+    <p>请输入你猜的数字：</p>
+    <input type="number" id="guess">
+    <button onclick="checkGuess()">猜一下</button>
+    <p id="message"></p>
+    <p id="secret-display"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
