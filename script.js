@@ -99,7 +99,7 @@ function checkGuess() {
     feedback = "有一点小！";
     color = "blue";
   } else {
-    feedback = "🎉 猜对了！";
+    feedback = " 猜对了！";
     color = "green";
   }
 
