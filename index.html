@@ -2,29 +2,52 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
-  <title>猜数字游戏（中文学习版）</title>
+  <title>中文学习猜数字游戏</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>🎯 猜数字游戏（中文学习版）</h1>
+  <h1>🎯 中文学习猜数字游戏</h1>
 
+  <!-- 数字参考表 -->
+  <div class="reference">
+    <h2>数字参考表 1-10</h2>
+    <ul>
+      <li>1 - 一 [yī]</li>
+      <li>2 - 二 [èr]</li>
+      <li>3 - 三 [sān]</li>
+      <li>4 - 四 [sì]</li>
+      <li>5 - 五 [wǔ]</li>
+      <li>6 - 六 [liù]</li>
+      <li>7 - 七 [qī]</li>
+      <li>8 - 八 [bā]</li>
+      <li>9 - 九 [jiǔ]</li>
+      <li>10 - 十 [shí]</li>
+    </ul>
+  </div>
+
+  <!-- 游戏设置 -->
   <div class="setup">
     <label>最小值：
       <input type="number" id="min" value="1">
     </label>
     <label>最大值：
-      <input type="number" id="max" value="20">
+      <input type="number" id="max" value="10">
     </label>
     <button onclick="startGame()">开始游戏</button>
   </div>
 
+  <!-- 游戏区域 -->
   <div class="game hidden" id="game">
     <p id="range-info"></p>
-    <p>请输入你猜的数字：</p>
-    <input type="number" id="guess">
+    <p>
+      请输入你猜的数字：
+      <input type="number" id="guess" oninput="updateInputDisplay()">
+      <span id="input-display"></span>
+    </p>
     <button onclick="checkGuess()">猜一下</button>
     <p id="message"></p>
     <p id="secret-display"></p>
+    <p>猜测次数：<span id="guess-count">0</span></p>
   </div>
 
   <script src="script.js"></script>
